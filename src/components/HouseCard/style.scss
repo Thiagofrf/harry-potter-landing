@@ -1,0 +1,70 @@
+.hp-houseCard {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    color: #fff;
+    padding: 24px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 45%;
+        height: 400px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 100%;
+        height: 380px;
+    }
+
+    &--green {
+        border: 1px solid #1d7454;
+        
+        &:hover {
+            box-shadow: #1d7454 0px 20px 30px -10px;
+        }
+    }
+
+    &--red {
+        border: 1px solid #b21b28;
+
+        &:hover {
+            box-shadow: #b21b28 0px 20px 30px -10px;
+        }
+    }
+
+    &--blue {
+        border: 1px solid #8cb9d7;
+
+        &:hover {
+            box-shadow: #8cb9d7 0px 20px 30px -10px;
+        }
+    }
+
+    &--yellow {
+        border: 1px solid #ffe48b;
+
+        &:hover {
+            box-shadow: #ffe48b 0px 20px 30px -10px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__image {
+        max-width: 100px;
+        margin: 24px 0;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
