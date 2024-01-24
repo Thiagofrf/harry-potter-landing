@@ -8,14 +8,14 @@
     z-index: 1;
 
     @media only screen and (min-width: 600px) and (max-width: 1024px) {
-        background-color: red;
+        background-color: #8cb9d7;
     }
 
     &:hover {
-        background: red;
+        background: #8cb9d7;
 
         .hp-header__links {
-            background: rgb(95, 0, 0);
+            background: #013351;
         }
     }
 
@@ -39,7 +39,7 @@
         }
 
         @media only screen and (min-width: 600px) and (max-width: 1024px) {
-            background: rgb(95, 0, 0);
+            background: #013351;
         }
         
         &--item {
@@ -47,7 +47,7 @@
             border-bottom: 1px solid transparent;
 
             &:hover {
-                border-bottom: 1px solid green;
+                border-bottom: 1px solid #8cb9d7;
             }
         }
     }
