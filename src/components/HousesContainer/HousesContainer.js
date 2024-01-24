@@ -1,7 +1,6 @@
 import './style.scss'
 import HouseCard from '../HouseCard/HouseCard'
 import HouseData from './houses.data'
-import ArrowDown from '../../assets/arrow-down.gif'
 
 const HousesContainer = () => {
     return (
