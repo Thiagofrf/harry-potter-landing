@@ -1,0 +1,49 @@
+.hp-header {
+    padding: 24px 0 0;
+    transition: .6s ease-in-out;
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        background-color: red;
+    }
+
+    &:hover {
+        background: red;
+
+        .hp-header__links {
+            background: rgb(95, 0, 0);
+        }
+    }
+
+    &__logo {
+        text-align: center;
+        img {
+            width: 66px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 10px 0; 
+        transition: .6s ease-in-out;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 1024px) {
+            background: rgb(95, 0, 0);
+        }
+        
+        &--item {
+            color: #fff;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid green;
+            }
+        }
+    }
+}
