@@ -1,5 +1,5 @@
 .hp-charCard {
-    width: 30%;
+    width: 100%;
     border: 1px solid #db9d31;
     padding: 16px;
 
@@ -7,6 +7,14 @@
     align-items: center;
     justify-content: center;
     box-shadow: #885e16 0px 30px 60px -12px inset, #db9d31 0px 18px 36px -18px inset;
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+
+    @media (min-width: 1440px) {
+        width: 30%;
+    }
 
     &--container {
         border: 1px solid #db9d31;
@@ -25,7 +33,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 260px;
+        width: 80%;
         height: 300px;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
@@ -35,9 +43,17 @@
 
     &__name {
         color: #db9d31;
-        font-size: 32px;
+        font-size: 18px;
         margin-top: 12px;
         font-weight: 700;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+    
+        @media (min-width: 1440px) {
+            font-size: 32px;
+        }
     }
 
     &__house {
