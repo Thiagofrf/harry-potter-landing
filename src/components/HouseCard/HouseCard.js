@@ -1,8 +1,8 @@
 import './style.scss'
 
-const HouseCard = ({key, title, icon, description, customClass}) => {
+const HouseCard = ({title, icon, description, customClass}) => {
     return (
-        <div className={`hp-houseCard hp-houseCard--${customClass}`} key={key}>
+        <div className={`hp-houseCard hp-houseCard--${customClass}`}>
             <p className='hp-houseCard__title'>
                 {title}
             </p>

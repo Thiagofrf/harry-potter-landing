@@ -1,0 +1,23 @@
+.hp-charContainer {
+    padding-top: 64px;
+    background: url('../../assets/background.gif');
+
+    h2 {
+        font-family: 'MedievalSharp', cursive;
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &__charList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+        width: 80%;
+        margin: auto;
+    }
+    
+}

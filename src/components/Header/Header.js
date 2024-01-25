@@ -8,13 +8,13 @@ const Header = () => {
                 <img src={Logo} alt='Harry Potter - Símbolo da casa Grifinória'/>
             </div>
             <div className='hp-header__links'>
-                <a className='hp-header__links--item'>
+                <a className='hp-header__links--item' href='#'>
                     Sobre 
                 </a>
-                <a className='hp-header__links--item'>
+                <a className='hp-header__links--item' href='#'>
                     Casas
                 </a>
-                <a className='hp-header__links--item'>
+                <a className='hp-header__links--item' href='#'>
                     Personagens
                 </a>
             </div>

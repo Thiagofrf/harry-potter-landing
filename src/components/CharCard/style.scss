@@ -1,0 +1,79 @@
+.hp-charCard {
+    width: 30%;
+    border: 1px solid #db9d31;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #885e16 0px 30px 60px -12px inset, #db9d31 0px 18px 36px -18px inset;
+
+    &--container {
+        border: 1px solid #db9d31;
+        width: 95%;
+        height: 95%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    &__image {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 300px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+        border: 1px solid #db9d31;
+    }
+
+    &__name {
+        color: #db9d31;
+        font-size: 32px;
+        margin-top: 12px;
+        font-weight: 700;
+    }
+
+    &__house {
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+
+        &[data-house="Gryffindor"] {
+            border-bottom: 1px solid #b21b28;
+        }
+        &[data-house="Slytherin"] {
+            border-bottom: 1px solid #1d7454;
+        }
+        &[data-house="Hufflepuff"] {
+            border-bottom: 1px solid #ffe48b;
+        }
+        &[data-house="Ravenclaw"] {
+            border-bottom: 1px solid #8cb9d7;
+        }
+    }
+
+    &__moreInfo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 24px;
+
+
+        div {
+            width: 50%;
+            color: #fff;
+            margin-bottom: 10px;
+
+            p {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+}
