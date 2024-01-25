@@ -4,7 +4,7 @@ import HouseData from './houses.data'
 
 const HousesContainer = () => {
     return (
-        <div className='hp-housesContainer'>
+        <div className='hp-housesContainer' id='houses'>
             <h2>
                 As casas de Hogwarts
             </h2>

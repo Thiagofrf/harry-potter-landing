@@ -22,12 +22,12 @@ const CharContainer = () => {
     }, [])
 
     return (
-        <div className='hp-charContainer'>
+        <div className='hp-charContainer' id='characters'>
             <h2>
-                Os personagens
+                Personagens marcantes
             </h2>
             <div className='hp-charContainer__charList'>
-                {charList.slice(0, 12).map((item, index) => {
+                {charList.slice(0, 18).map((item, index) => {
                     return (
                         <CharCard
                             image={item.image}
@@ -37,7 +37,8 @@ const CharContainer = () => {
                             patronus={item.patronus}
                             actor={item.actor}
                             alive={item.alive}
-                            key={index}/>
+                            key={index}
+                        />
                     )
                 })}
             </div>
