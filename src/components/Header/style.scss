@@ -1,3 +1,5 @@
+@use '../scss/colors' as *;
+
 .hp-header {
     width: 100%;
     padding: 24px 0 0;
@@ -8,14 +10,14 @@
     z-index: 1;
 
     @media only screen and (min-width: 600px) and (max-width: 1024px) {
-        background-color: #8cb9d7;
+        background-color: $lighter-blue;
     }
 
     &:hover {
-        background: #8cb9d7;
+        background: $lighter-blue;
 
         .hp-header__links {
-            background: #013351;
+            background: $darker-blue;
         }
     }
 
@@ -39,16 +41,16 @@
         }
 
         @media only screen and (min-width: 600px) and (max-width: 1024px) {
-            background: #013351;
+            background: $darker-blue;
         }
         
         &--item {
-            color: #fff;
+            color: $white;
             border-bottom: 1px solid transparent;
             text-decoration: none;
 
             &:hover {
-                border-bottom: 1px solid #8cb9d7;
+                border-bottom: 1px solid $lighter-blue;
             }
         }
     }

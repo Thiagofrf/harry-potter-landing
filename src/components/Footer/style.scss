@@ -1,6 +1,8 @@
+@use '../scss/colors' as *;
+
 .hp-footer {
     text-align: center;
     padding: 24px 0;
-    background: #db9d31;
-    color: #fff;
+    background: $main-yellow;
+    color: $white;
 }

@@ -1,3 +1,5 @@
+@use '../scss/colors' as *;
+
 .hp-charContainer {
     padding: 64px 0;
     background: url('../../assets/background.gif');
@@ -6,7 +8,7 @@
     h2 {
         font-family: 'MedievalSharp', cursive;
         font-size: 36px;
-        color: #fff;
+        color: $white;
         margin-bottom: 32px;
         text-align: center;
     }
